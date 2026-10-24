@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn zig for free</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Downloading Zig</h1>
+    
+   <p>isn't a fairly popular language like C++ or python, to compile Zig code you will have to plugins in your perfered workspace app or run zig via terminal</p>
+    <br>
+    
+  <p>Now that you know what Zig is(lesson <a href="zig_intro3.html">Zig intro</a>)
+      You should download an proper IDE(Integrated Development Environment) or a text editor to run zig code.
+      Download Zig from <a href="https://ziglang.org/download/">Offical zig download page</a> and select your perfered architecture.
+      If you are on mobile, you have a many options <a href="https://zig-play.dev">Online zig intepreter</a> <br>
+      <a href="https://online-zig.netlify.app">Barebone zig intpreter</a> <br>
+      or the <a href="https://github.com/TheonlyOneByC/online-zig/blob/main/instructions.txt">Zig intepreter with file support</a>
+  </p>
+    
+    
+    <h1>Downloading Zig for non mobile users</h1>
+    <p>On a PC you also have many great options: <br>
+        Lightweight text editor: <a href="https://code.visualstudio.com/">VS Code</a> <br>
+        Heavyweight full IDE: <a href="https://www.jetbrains.com/clion/">CLion</a>
+    </p>
+    
+    <h1>Downloading Zig for VS Code</h1>
+    <p>press Ctrl + Shift + X on Windows and Cmd + Shift + X on macOS to get to the plugins menu from there in the top bar you can search for Zig and download the first one</p>
+  <button id="change-color">Change color</button>
+  
+    <h1>Setting up Zig for CLion</h1>
+    <p>After you have downloaded Zig and extracted it on your computer, navigate your way to settings menu(shortcut above) find Languages & Frameworks; find Zig, Toolchain and Server field, for the toolchain point to your folder where your Zig intepreter lives(not the .exe)
+
+After you've done that check, confirm it works by checking if the field does say anything other than zig followed by numbers
+
+The server refers to the server handling autocomplete, it's optional to download but if you do wanna download it you can press the auto download option for it near the same field</p>
+    
+    <h1>Running Zig code</h1>
+    <p>After you have done the steps above you need to add zig to your path you can do that by following a YouTube tutorial, after you've done that you need to open your terminal navigate to your project cd "ProjectPath" and run zig init
+
+Zig init is used to so the compiler can link the libraries together; this will create a folder called src where all your files will be and where zig runs code, files outside of src/ are ignored by default however we will get more into details future lessons on
+
+To simplify what Zig build does it construct a dependency of steps(e.g. in what order to run the files), it also looks for build.zig in the root folder so it can run and compile the script using a minuture internal runner
+
+zig build also does a lot more which we will get into with future lessons
+
+After you have run zig build and pressed run in your IDE you may see that no output is generated this is because zig build doesn't actually run the code it only builds it , to actually run the code you must use zig build run
+
+If you are doing quick projects you can instead use zig run which does not need zig build</p>
+    
+  <noscript>
+    <p id="top-down">Javascript disabled some features might not be available</p>
+  </noscript>
+    
+    
+  <script src="switch-color.js"></script>
+  
+</body>
+</html>

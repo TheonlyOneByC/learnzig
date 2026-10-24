@@ -1,0 +1,35 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: monospace, arial;
+  overflow-wrap: anywhere;
+}
+
+#change-color {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+}
+
+#top-down {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+.code {
+  display: inline-block;
+  background-color: #4A4A4A;
+  font-family: monospace, sans, arial;
+}
+
+.explain {
+  display: inline-block;
+  background-color: sandybrown;
+  font-family: monospace, sans, arial;
+}
