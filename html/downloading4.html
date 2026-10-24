@@ -10,7 +10,7 @@
 <body>
   <h1>Downloading Zig</h1>
     
-   <p>isn't a fairly popular language like C++ or python, to compile Zig code you will have to plugins in your perfered workspace app or run zig via terminal</p>
+   <p>Zig isn't a fairly popular language like C++ or python, to compile Zig code you will have to plugins in your perfered workspace app or run zig via terminal</p>
     <br>
     
   <p>Now that you know what Zig is(lesson <a href="zig_intro3.html">Zig intro</a>)
@@ -20,8 +20,7 @@
       <a href="https://online-zig.netlify.app">Barebone zig intpreter</a> <br>
       or the <a href="https://github.com/TheonlyOneByC/online-zig/blob/main/instructions.txt">Zig intepreter with file support</a>
   </p>
-    
-    
+      
     <h1>Downloading Zig for non mobile users</h1>
     <p>On a PC you also have many great options: <br>
         Lightweight text editor: <a href="https://code.visualstudio.com/">VS Code</a> <br>
@@ -42,11 +41,11 @@ The server refers to the server handling autocomplete, it's optional to download
     <h1>Running Zig code</h1>
     <p>After you have done the steps above you need to add zig to your path you can do that by following a YouTube tutorial, after you've done that you need to open your terminal navigate to your project cd "ProjectPath" and run zig init
 
-Zig init is used to so the compiler can link the libraries together; this will create a folder called src where all your files will be and where zig runs code, files outside of src/ are ignored by default however we will get more into details future lessons on
+zig init generates a default project template(build.zig) and a sample source file
 
-To simplify what Zig build does it construct a dependency of steps(e.g. in what order to run the files), it also looks for build.zig in the root folder so it can run and compile the script using a minuture internal runner
+To simplify what zig build does it construct a dependency of steps(e.g. in what order to run the files), it also looks for build.zig in the root folder so it can run and compile the script using a minuture internal runner
 
-zig build also does a lot more which we will get into with future lessons
+Zig build also links specfied libaries in build.zig, in compile source files into exes or libaries, that is not the only purpose of build.zig it does a lot more which we will get onto in future lessons.
 
 After you have run zig build and pressed run in your IDE you may see that no output is generated this is because zig build doesn't actually run the code it only builds it , to actually run the code you must use zig build run
 
